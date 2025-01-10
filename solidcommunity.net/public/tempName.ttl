@@ -3,16 +3,10 @@
 @prefix ldp: <http://www.w3.org/ns/ldp#>.
 @prefix stat: <http://www.w3.org/ns/posix/stat#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-@prefix set: <>.
+@prefix pub: <>.
 
-set:
+pub:
     a ldp:BasicContainer, ldp:Container;
     dct:modified "2025-01-10T19:15:16Z"^^xsd:dateTime;
-    ldp:contains <serverSide.ttl.inactive>;
     stat:mtime 1736536516.693;
     stat:size 4096 .
-<serverSide.ttl.inactive>
-    a ldp:Resource;
-    dct:modified "2025-01-10T19:15:16Z"^^xsd:dateTime;
-    stat:mtime 1736536516.689;
-    stat:size 307 .

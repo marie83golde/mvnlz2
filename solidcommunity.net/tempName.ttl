@@ -5,13 +5,25 @@
 @prefix stat: <http://www.w3.org/ns/posix/stat#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix m: <>.
+@prefix pub: </public/>.
 @prefix set: </settings/>.
+@prefix pl: <http://www.w3.org/ns/iana/media-types/text/plain#>.
 
 m:
     a ldp:BasicContainer, ldp:Container, space:Storage;
     dct:modified "2025-01-10T19:15:16Z"^^xsd:dateTime;
-    ldp:contains set:;
+    ldp:contains pub:, </robots.txt>, set:;
     stat:size 4096 .
+pub:
+    a ldp:BasicContainer, ldp:Container, ldp:Resource;
+    dct:modified "2025-01-10T19:15:16Z"^^xsd:dateTime;
+    stat:mtime 1736536516.693;
+    stat:size 4096 .
+</robots.txt>
+    a pl:Resource, ldp:Resource;
+    dct:modified "2025-01-10T19:15:16Z"^^xsd:dateTime;
+    stat:mtime 1736536516.693;
+    stat:size 83 .
 set:
     a ldp:BasicContainer, ldp:Container, ldp:Resource;
     dct:modified "2025-01-10T19:15:16Z"^^xsd:dateTime;
